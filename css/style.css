@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    /* Añadir el box-sizing para mejor control del layout */
+    color: #17202A;
+}
+
+body {
+    background-color: #FBFCFC;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding: 0px 20px;
+    height: 70px;
+}
+
+.header__logo,
+.logo__img {
+    width: auto;
+    height: 100%;
+}
+
+/* Estilo de la navegación */
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    margin-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+a.nav__link--active {
+    background-color: #33FFCC;
+}
+
+.nav a:hover {
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+    background-color: #17202A;
+    color: #FBFCFC;
+}
+
+/* Estilo del contenido de la página */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilo de la sección Abaut */
+
+.main__sect {
+    display: flex;
+    /* border: 2px solid #33FFCC; */
+    /* width: 705px; */
+}
+
+.main__photo {
+    width: auto;
+    height: 400px;
+    margin: 0;
+}
+
+.main__photo-1 {
+    border-radius: 30px;
+    background-color: #d7d7d7;
+    width: auto;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    
+}
+
+.main__art {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px;
+    padding: 10px;
+}
+
+.main__art h1 {
+    font-size: 50px;
+}
+
+.main__art h2 {
+    font-size: 22px;
+}
+
+.main__art,
+h1,
+h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.main__art p {
+    margin: 0;
+    padding: 2px 0px;
+}
+
+/* Estilo de la sección 1 */
+.main__sect-1 {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #FBFCFC; */
+    border: 2px solid #33FFCC;
+    width: 705px;
+}
+
+
+.sect1__cont__tarj{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 5px;
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+/* Estilo del pie de página */
+.sect2__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%);
+    background-blend-mode: normal, normal, screen, overlay, normal;
+    box-shadow: 0px 0px 10px 1px #000000;
+}
+
+.sect2__card img{
+    margin: 10px;
+    width: 30px;
+    height: auto;
+}
+
+/* Estilo del pie de página */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+.cont__info {
+    display: flex;
+    padding: 20px;
+}
+
+.from__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 30px 30px 30px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
+    position: relative;
+    overflow: hidden;
+}
+
+.from__main::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: rgb(209, 193, 255);
+    transform: rotate(45deg);
+    left: -80px;
+    bottom: 10px;
+    z-index: 1;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.082);
+}
+
+.inputContainer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.inputField {
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(173, 173, 173);
+    margin: 10px 0;
+    color: black;
+    font-size: .8em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+
+.button {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: rgb(162, 104, 255);
+    height: 30px;
+    color: white;
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(126, 84, 255);
+}
+
+
+@media only screen and (max-width: 900px) {
+    .main__photo {
+        height: 280px;
+        padding-bottom: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .header {
+        padding: 0 10px;
+    }
+
+    .header__logo {
+        margin: 0;
+    }
+
+    .main__sect {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__art {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .main__sect-1 {
+        display: flex;
+
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    [class^='main__sect-'] {
+        margin-top: 20px;
+    }
+
+    footer{
+        padding: 0;
+        width: 100%;
+    }
+
+    .cont__info{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .info__contact{
+        padding-left: 20px;
+    }
+
+    .info__messenger{
+        padding: 0;
+        margin-top: 9px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main__sect{
+        align-items: center;
+    }
+
+    .main__art{
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer{
+        padding: 0;
+        width: 100%;
+    }
+
+    .cont__info{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .info__contact{
+        padding-left: 20px;
+    }
+
+    .info__messenger{
+        padding: 0;
+        margin-top: 9px;
+    }
+}

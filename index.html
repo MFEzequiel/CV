@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferreyra Marcelo Desarrollador Web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="shortcut icon" href="img/logo-marcelo.png" type="image/x-icon">
 </head>
@@ -13,7 +13,7 @@
     <header class="header">
         <div class="header__cont">
             <figure class="header__logo">
-                <a href="index.html">
+                <a href="https://mfezequiel.github.io/">
                     <img class="logo__img" src="img/logo-marcelo.png" alt="">
                 </a>
             </figure>
@@ -33,80 +33,84 @@
         </section>
 
     </header>
+    <div class="cont">
+        <!-- Contenido principal -->
+        <main class="main">
     
-    <!-- Contenido -->
-    <main class="main">
-
-        <section class="main__sect">
-
-            <figure class="main__photo">
-                <img class="main__photo-1" src="img/photo-marcelo.png" alt="Photo__Marcelo">
-
-            </figure>
-
-            <article class="main__art">
-                <h1>Soy Marcelo.</h1>
-                <h2>Estoy Explrando y Expandiendo Mis Habilidades en el Desarrollo Frontend.</h2>
-                <p>En búsqueda constante de innovación y nuevas oportunidades para aplicar mis habilidades y seguir creciendo como desarrollador frontend.</p>
-
-                <div>
-                    <a href="#"></a>
-                    <a href="#"></a>
+            <section class="main__sect-">
+    
+                <figure class="main__photo">
+                    <img class="main__photo-1" src="img/photo-marcelo.png" alt="Photo__Marcelo">
+    
+                </figure>
+    
+                <article class="main__art">
+                    <h1>Soy Marcelo.</h1>
+                    <h2>Estoy Explrando y Expandiendo Mis Habilidades en el Desarrollo Frontend.</h2>
+                    <p>En búsqueda de oportunidades para aplicar mis habilidades y seguir creciendo como desarrollador frontend.</p>
+    
+                    <div>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </article>
+            </section>
+            
+            <section id="work" class="main__sect-1">
+                <h2>Proyetos</h2>
+                <div class="sect1__cont__tarj">
+                    <div class="card"></div>
+                    <div class="card"></div>
                 </div>
-            </article>
-        </section>
-        
-        <section id="work" class="main__sect-1">
-            <h2>Proyetos</h2>
-            <div class="sect1__cont__tarj">
-                <div class="card"></div>
-                <div class="card"></div>
+            </section>
+    
+            <section class="main__sect-2">
+                <div class="sect2__card">
+                    <img src="img/html.png" alt="">
+                    <img src="img/css.png" alt="">
+                    <img src="img/javascript.png" alt="">
+                </div>
+            </section>
+    
+        </main>
+        <!-- Pied de página -->
+        <footer id="contact" class="footer">
+            <!-- Sección de Información de Contacto -->
+            <div class="cont__info">
+                <div class="info__contact">
+                    <h2>Contactos</h2>
+                    <address>
+                        <p>+54 3644683871</p>
+                        <br>
+                        <p>marceloexequielf4@gmail.com</p> <!-- Corrige el correo electrónico de "gmial.com" a "gmail.com" -->
+                    </address>
+                </div>
+                <!-- Formulario de Mensajería -->
+                <div class="info__messenger">
+                    <form action="https://formspree.io/f/mgejkpbw"
+                    method="POST" class="from__main">
+                        <div class="inputContainer">
+                            <label for="email" class="info__email__text">Email</label>
+                            <input class="inputField"  type="email" name="email" id="email" class="info__email" placeholder="ejemplo@gmail.com">
+                        </div>
+                        <br>
+                        <div class="inputContainer">
+                            <label for="mensaje" class="info__mess">
+                                Mensaje
+                            </label>
+                            <textarea class="inputField" name="mensaje" id="mensaje" class="info__messe" cols="40" rows="4" placeholder="Mensaje"></textarea>
+                        </div>
+                        <br>
+                        <div class="form__butt">
+                            <input class="button" type="submit" class="submit">
+                            <span></span>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
-
-        <section class="main__sect-2">
-            <div class="sect2__card">
-                <img src="img/html.png" alt="">
-                <img src="img/css.png" alt="">
-                <img src="img/javascript.png" alt="">
-            </div>
-        </section>
-
-    </main>
-    <hr>
-    <!-- Pied de página -->
-    <footer id="contact" class="footer">
-        <!-- Sección de Información de Contacto -->
-        <div class="cont__info">
-            <div class="info__contact">
-                <h2>Contactos</h2>
-                <address>
-                    <p>+54 3644683871</p>
-                    <br>
-                    <p>marceloexequielf4@gmail.com</p> <!-- Corrige el correo electrónico de "gmial.com" a "gmail.com" -->
-                </address>
-            </div>
-            <!-- Formulario de Mensajería -->
-            <div class="info__messenger">
-                <form action="https://formspree.io/f/mgejkpbw"
-                method="POST" class="from__main">
-                    <div class="inputContainer">
-                        <label for="email" class="info__email__text">Email</label>
-                        <input class="inputField"  type="email" name="email" id="email" class="info__email" placeholder="ejemplo@gmail.com">
-                    </div>
-                    <br>
-                    <div class="inputContainer">
-                        <label for="mensaje" class="info__mess">
-                            Mensaje
-                        </label>
-                        <textarea class="inputField" name="mensaje" id="mensaje" class="info__messe" cols="40" rows="4" placeholder="Mensaje"></textarea>
-                    </div>
-                    <br>
-                    <input class="button" type="submit" class="submit">
-                </form>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <!-- Contenido -->
 
 </body>
 </html>

@@ -16,42 +16,73 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 10px;
     padding: 0px 20px;
-    height: 70px;
+    height: 500px;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(204, 8%, 76%, 0.7),#232526), url("../img/photo-marcelo-1.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(204, 8%, 76%, 0.7),#232526), url("../img/photo-marcelo-1.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.header__cont{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px 0 0 0;
 }
 
 .header__logo,
 .logo__img {
     width: auto;
-    height: 100%;
+    height: 70px;
+}
+
+.nav{
+    height: 70px;
+    width: 190px;
 }
 
 /* Estilo de la navegación */
 .nav ul {
     display: flex;
+    align-items: flex-start;
     list-style: none;
+    height: 100%;
+}
+
+.nav ul li{
+    transform: translateY(10px);
 }
 
 .nav a {
-    margin-right: 10px;
     padding: 10px;
     text-decoration: none;
+    border: 2px solid #ffffff;
     border-radius: 8px;
+    color: rgb(172, 172, 172);
 }
 
 a.nav__link--active {
+    margin-left: 10px;
+    border: 2px solid #33FFCC;
     background-color: #33FFCC;
+    color: inherit;
 }
 
 .nav a:hover {
     border-radius: 8px;
     transition: all .2s ease-in-out;
+    border: 2px solid #33FFCC;
     background-color: #17202A;
     color: #FBFCFC;
+}
+
+
+.header__text{
+    transform: translateY(110px);
+    font-size: 80px;
 }
 
 /* Estilo del contenido de la página */
@@ -61,13 +92,16 @@ a.nav__link--active {
     align-items: center;
 }
 
+/* Estilo de la sectiones */
+[class^='main__sect-'] {
+    margin-top: 20px;
+}
 
 /* Estilo de la sección Abaut */
 
 .main__sect {
+    margin-top: 20px;
     display: flex;
-    /* border: 2px solid #33FFCC; */
-    /* width: 705px; */
 }
 
 .main__photo {
@@ -82,7 +116,6 @@ a.nav__link--active {
     width: auto;
     height: 100%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
-    
 }
 
 .main__art {
@@ -118,8 +151,6 @@ h2 {
 .main__sect-1 {
     display: flex;
     flex-direction: column;
-    /* background-color: #FBFCFC; */
-    border: 2px solid #33FFCC;
     width: 705px;
 }
 
@@ -143,6 +174,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px;
     width: 200px;
     height: 250px;
     border: none;
@@ -163,7 +195,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px 0 0 0;
+    margin-top: 50px;
 }
 
 .cont__info {
@@ -243,6 +275,10 @@ footer {
 
 
 @media only screen and (max-width: 900px) {
+    [class^='main__sect-'] {
+        margin-top: 20px;
+    }
+
     .main__photo {
         height: 280px;
         padding-bottom: 5px;
@@ -258,6 +294,11 @@ footer {
 
     .header__logo {
         margin: 0;
+    }
+
+    .header__text{
+        transform: translateY(110px);
+        font-size: 60px;
     }
 
     .main__sect {
@@ -305,6 +346,11 @@ footer {
 }
 
 @media screen and (max-width:500px) {
+    .header__text{
+        transform: translateY(150px);
+        font-size: 50px;
+    }
+
     .main__sect{
         align-items: center;
     }
@@ -332,5 +378,46 @@ footer {
     .info__messenger{
         padding: 0;
         margin-top: 9px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header__text{
+        transform: translateY(150px);
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header{
+        height: 480px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .header{
+        height: 370px;
+    }
+
+    .header__logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo__img{
+        width: auto;
+        height: 100%;
+    }
+
+    .nav a{
+        font-size: 12px;
+    }
+
+    .header__text{
+        transform: translateY(120px);
+        font-size: 25px;
     }
 }

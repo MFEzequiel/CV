@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferreyra Marcelo Desarrollador Web</title>
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-    <link rel="shortcut icon" href="/img/logo-marcelo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="img/logo-marcelo.png" type="image/x-icon">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <figure class="header__logo">
-            <a href="index1.html">
-                <img class="logo__img" src="/img/logo-marcelo.png" alt="">
-            </a>
-        </figure>
+        <div class="header__cont">
+            <figure class="header__logo">
+                <a href="index.html">
+                    <img class="logo__img" src="img/logo-marcelo.png" alt="">
+                </a>
+            </figure>
+    
+            <nav class="nav">
+    
+                <ul>
+                    <li><a class="nav__link--hover" href="#work">Trabajos</a></li>
+                    <li><a class="nav__link--active" href="#contact">Contacto</a></li>
+                </ul>
+    
+            </nav>
+        </div>
 
-        <nav class="nav">
-
-            <ul>
-                <li><a class="nav__link--hover" href="#">Trabajos</a></li>
-                <li><a class="nav__link--active" href="#">Contacto</a></li>
-            </ul>
-
-        </nav>
+        <section class="header__text">
+            <h2>Bienvenido</h2>
+        </section>
 
     </header>
     
@@ -34,8 +40,7 @@
         <section class="main__sect">
 
             <figure class="main__photo">
-                <div class="blob"></div>
-                <img class="main__photo-1" src="img/photo Marcelo.png" alt="Photo__Marcelo">
+                <img class="main__photo-1" src="img/photo-marcelo.png" alt="Photo__Marcelo">
 
             </figure>
 
@@ -51,13 +56,9 @@
             </article>
         </section>
         
-        <section class="main__sect-1">
+        <section id="work" class="main__sect-1">
             <h2>Proyetos</h2>
             <div class="sect1__cont__tarj">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
             </div>
@@ -74,7 +75,7 @@
     </main>
     <hr>
     <!-- Pied de página -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <!-- Sección de Información de Contacto -->
         <div class="cont__info">
             <div class="info__contact">

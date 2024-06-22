@@ -1,0 +1,4 @@
+.item__link.active,.menu__item__link.active, .buttons-active {
+  color: var(--Bright-Cyan);
+  border-bottom: 2px solid var(--aqua);
+}

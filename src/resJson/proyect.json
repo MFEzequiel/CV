@@ -1,0 +1,13 @@
+{
+    "res": [
+        {
+            "Id": 1,
+            "Poster":"/src/assets/img/EasyBank.jpg",
+            "Name": "EasyBank",
+            "Description": "Este proyecto fue seleccionado de los desafíos de Frontend Mentor, el objetivo principal fue aprender SMACSS.",
+            "Url": "pasando",
+            "GitHub": "https://github.com/MFEzequiel/Easybank-landing-page-master.git",
+            "Category": "Landing"
+        }
+    ]
+}

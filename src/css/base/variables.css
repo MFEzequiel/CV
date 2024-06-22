@@ -1,0 +1,28 @@
+:root {
+    --grey: #d5d5d5;
+    --aqua: #00ffff;
+    --dark: #3D464D;
+    --font-size: 1.5rem;
+    --font-size2: 2rem;
+    --font-size3: 2.5rem;
+
+    --color-text: black;
+    --backgruond-color: white;
+    color-scheme: light dark;
+    text-rendering: optimizeLegibility;
+    /* Primary */
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+    --Accent-Color: hsl(50deg 100% 50% / 29%);
+    --color-sum: hsl(50, 80%, 53%);
+    /* Neutral */
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+    --box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, .2);
+    color: var(--color-text);
+    background-color: var(--backgruond-color);
+}

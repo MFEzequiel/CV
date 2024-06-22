@@ -1,0 +1,18 @@
+.item__button, .buttons {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button__icon {
+    width: 100%;
+}
+
+.button__icon-sum {
+    fill: var(--color-sum);
+}
+
+.button__icon-moon {
+    fill: yellowgreen;
+}
+

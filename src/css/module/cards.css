@@ -1,0 +1,84 @@
+.container__card {
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  padding-left: 26%;  
+}
+
+.skills__card {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 50px;
+  padding: 10px 0 50px;
+}
+
+.card {
+    width: 520px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.content__text {
+    width: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.text__links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.card__link {
+    display:flex;
+    align-items: center;
+    gap: 2px;
+    border-right: 2px solid var(--Lime-Green);
+    border-radius: 8px;
+    padding-right: 8px;
+    color: var(--color-text);
+}
+
+.link__icon {
+    width: 20px;
+    height: auto;
+}
+
+.card__content {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.content__picture {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card__title {
+  font-weight: 700;
+}
+
+.card__picture {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  width: 100%;
+}

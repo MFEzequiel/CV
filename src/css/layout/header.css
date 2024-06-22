@@ -1,0 +1,90 @@
+.header {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  width: auto;
+  z-index: 1;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+}
+
+.nav__menu {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 10px;
+  list-style: none;
+  font-size: var(--font-size);
+}
+
+.menu__item {
+  padding: 10px;
+}
+
+.item__link, .cont__link {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 10px;
+}
+
+.link__image, .button__icon {
+    width: 20px;
+    height: auto;
+    fill: var(--color-text);
+}
+
+.container__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 25%;
+  height: 100vh;
+  background-color: var(--Dark-Blue);
+  padding-top: 40px;
+  position: fixed;
+}
+
+.container__header__nav {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.header__nav__menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  row-gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  font-weight: 400;
+}
+
+.menu__item__link {
+  color: var(--White);
+}
+
+.portfolio__header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.portfolio__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}

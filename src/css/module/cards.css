@@ -1,11 +1,10 @@
 .container__card {
-    width: 75%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-  padding-left: 26%;  
+    padding-left: 26%;  
 }
 
 .skills__card {
@@ -16,14 +15,13 @@
 }
 
 .card {
-    width: 520px;
-    height: auto;
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    height: 500px;
 }
 
 .content__text {
@@ -58,10 +56,11 @@
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    overflow: hidden;
 }
 
 .content__picture {
-    width: 50%;
+    width: 330px;
     display: flex;
     align-items: center;
 }
@@ -81,4 +80,68 @@
   flex-flow: row wrap;
   gap: 20px;
   width: 100%;
+}
+
+.cards__picture {
+    background-color: var(--Accent-Color);
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards__picture__image {
+    object-fit: contain;
+    width: 80%;
+    height: auto;
+    background-color: var(--Light-Grayish-Blue);
+    aspect-ratio: 683/667;
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
+    box-shadow: 0 4px 6px 0 var(--Bright-Cyan);
+}
+
+.cards__article {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 0 20px;
+    row-gap: 10px;
+}
+
+@media only screen and (max-width: 980px) {
+    .container__card {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container__card {
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .card__content {
+        gap: 20px;
+    }
+
+    .cards__article, .cards__picture, .content__text, .content__picture {
+        width: auto;
+    }
 }

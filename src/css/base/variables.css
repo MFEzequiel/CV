@@ -26,3 +26,7 @@
     color: var(--color-text);
     background-color: var(--backgruond-color);
 }
+
+.subTitle {
+    font-weight: 700;
+}

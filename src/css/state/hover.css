@@ -1,6 +1,11 @@
-.cont__link:hover, .menu__item__link:hover {
+.cont__link:hover, .menu__item__link:hover{
   color: var(--aqua);
   border-bottom: 2px solid var(--aqua);
+}
+
+.card__link:hover {
+  color: var(--dark);
+  box-shadow: var(--box-shadow);
 }
 
 .picture__image:hover {

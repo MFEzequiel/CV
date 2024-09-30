@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom"
+import imageUser from '/public/img/photo-marcelo.png'
 
 export function Header_Home() {
     return (
         <div className="container__header">
-            <img className='container__header__image' src="/src/assets/img/photo-marcelo.png" alt="" />
+            <img className='container__header__image' src={imageUser} alt="Image Marcelo" />
             <nav className="container__header__nav">
             <ul className="header__nav__menu">
                 <li className="nav__menu__item">

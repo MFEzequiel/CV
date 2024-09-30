@@ -1,3 +1,5 @@
+import imageUser from '/public/img/photo-marcelo.png'
+
 export function Home() {
     return (
         <div className="container__cards">
@@ -7,7 +9,7 @@ export function Home() {
               <p className="article__paragraph">En búsqueda de oportunidades para aplicar mis habilidades y seguir creciendo como desarrollador frontend.</p>
             </article>
             <picture className="cards__picture">
-                <img className='cards__picture__image' src="/src/assets/img/photo-marcelo.png" alt="" />
+                <img className='cards__picture__image' src={imageUser} alt="imagen Marcelo" />
             </picture>
         </div>
     )

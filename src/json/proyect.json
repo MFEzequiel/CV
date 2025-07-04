@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "Id": "1",
+      "Poster": "./public/image/EasyBank.webp",
+      "Name": "EasyBank",
+      "Description": "Este proyecto fue seleccionado de los desafíos de Frontend Mentor, el objetivo principal fue aprender SMACSS.",
+      "Url": "https://e-easybank-landing-page.vercel.app/",
+      "UrlServer": "",
+      "GitHub": "https://github.com/MFEzequiel/Easybank-landing-page-master",
+      "Category": "Landing"
+    },
+    {
+      "Id": "2",
+      "Poster": "./public/image/TheBrother.webp",
+      "Name": "MultiShop",
+      "Description": "Practica de forntend, un pequeño crud con Express login y pasarela de pago.",
+      "Url": "https://the-brother.vercel.app/",
+      "UrlServer": "",
+      "GitHub": "https://github.com/MFEzequiel/TheBrothert",
+      "Category": "Aplication"
+    }
+  ]
+}

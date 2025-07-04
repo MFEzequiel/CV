@@ -1,116 +1,65 @@
 .header {
-  position: fixed;
-  top: 50px;
-  right: 30px;
-  bottom: 50px;
-  width: auto;
-  z-index: 1;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border-top: 4px solid #00da7e;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  overflow: hidden;
 }
 
-.header__nav {
+.navigation__menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: auto;
+  gap: 10px;
 }
 
-.nav__menu {
+.project__header {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  row-gap: 10px;
-  list-style: none;
-  font-size: var(--font-size);
-}
-
-.menu__item {
-  padding: 10px;
-}
-
-.item__link, .cont__link {
-  text-decoration: none;
-  color: var(--color-text);
-  padding: 10px;
-}
-
-.link__image, .button__icon {
-    width: 20px;
-    height: auto;
-    fill: var(--color-text);
-}
-
-.container__header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  width: 25%;
-  height: 100vh;
-  background-color: var(--Dark-Blue);
-  padding-top: 40px;
-  position: fixed;
-}
-
-.container__header__nav {
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
-}
-
-.header__nav__menu {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  row-gap: 30px;
-  align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  list-style: none;
-  font-weight: 400;
-}
-
-.menu__item__link {
-  color: var(--White);
-}
-
-.portfolio__header {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  flex-flow: column wrap;
   align-items: center;
+  gap: 10px;
 }
 
-.portfolio__title {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-}
 
 @media only screen and (max-width: 980px) {
-  .container__header {
-    display: none;
-    overflow: hidden;
-    width: 0;
-  }
-}
-
-@media only screen and (max-width: 700px) {
   .header {
-    position: static;
-    width: 100%;
-    height: 70px;
+    overflow: visible;
+    position: relative;
+    height: auto;
+    align-items: center;
+    justify-content: center;
   }
 
-  .nav__menu {
-    flex-direction: row;
-  }
-
-  .container__header {
-    display: none;
+  .header__navigation {
+    position: absolute;
+    width: 90dvw;
+    height: 0px;
+    top: 70px;
+    left: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--nav-color);
+    transition: .3s ease;
     overflow: hidden;
-    width: 0;
   }
+
+  .header__navigation.header__navigation-active {
+    height: 90dvh;
+  }
+  
+  .navigation__menu {
+    flex-direction: column;
+    gap: 50px;
+    background-color: var(--menu-color);
+    padding: 60px;
+    border-radius: 8px;
+    width: 90%;
+    height: 90%;
+  }
+
 }

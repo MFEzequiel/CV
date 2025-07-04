@@ -1,3 +1,12 @@
-:root[data-tema='dark'] {
-    
+:root[data-theme='dark'] {
+  --color-text: #fff;
+  --backgruond-color: #222;
+  --dark-blue: #1e1e1e;
+  --Accent-Color: hsl(0deg 0% 100% / 29%);
+  --green: #1d1d1d;
+  --seagreen: #003015;
+  --aqua: #0d8d8d;
+  --nav-color: hsla(155, 100%, 3%, 0.7);
+  --menu-color: hsla(0, 0%, 0%, 0.7);
+  --bt-line: #fff;
 }

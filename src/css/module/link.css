@@ -1,0 +1,15 @@
+.item__link {
+  color: var(--color-text);
+}
+
+.hero__social__link {
+  display: flex;
+  align-items: center;
+  color: var(--color-text);
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 2px solid currentColor;
+  gap: 5px;
+  background-color: var(--aqua);
+}

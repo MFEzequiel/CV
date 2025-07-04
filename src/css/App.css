@@ -8,9 +8,13 @@
 
 @import url('./module/button.css');
 @import url('./module/cards.css');
+@import url('./module/form.css');
+@import url('./module/link.css');
+@import url('./module/image.css');
 
 @import url('./state/hover.css');
 @import url('./state/active.css');
+@import url('./state/focus.css');
 
 @import url('./theme/default.css');
 @import url('./theme/dark.css');

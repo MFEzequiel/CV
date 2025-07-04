@@ -1,4 +1,11 @@
-.item__link.active,.menu__item__link.active, .buttons-active {
-  color: var(--Bright-Cyan);
+.item__link--active,
+.menu__item__link.active,
+.buttons-active {
+  color: var(--bright-cyan);
   border-bottom: 2px solid var(--aqua);
+}
+
+.item__link--active {
+  color: #858585;
+  border-bottom: 2px solid var(--green);
 }

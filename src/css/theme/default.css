@@ -1,2 +1,11 @@
-:root[data-tema='light'] {
+:root[data-theme='light'] {
+  --color-text: #222;
+  --backgruond-color: #fafafa;
+  --Accent-Color: hsl(50deg 100% 50% / 29%);
+  --green: #f2f2f2;
+  --seagreen: hsl(146, 50%, 36%);
+  --dark-blue: #d9d9d9;
+  --nav-color: hsla(156, 83%, 89%, 0.7);
+  --menu-color: hsla(0, 0%, 93%, 0.87);
+  --bt-line: #222;
 }

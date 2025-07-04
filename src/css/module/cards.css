@@ -1,74 +1,89 @@
-.container__card {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding-left: 26%;  
+.skills__card,
+.card,
+.content__text,
+.text__links,
+.card__link,
+.card__content,
+.card__picture,
+.content__picture,
+.cards__picture,
+.cards__article {
+  display: flex;
+}
+
+.card,
+.card__link,
+.content__picture,
+.cards__picture {
+  align-items: center;
 }
 
 .skills__card {
-  display: flex;
   flex-flow: column wrap;
-  row-gap: 50px;
+  gap: 50px;
   padding: 10px 0 50px;
 }
 
 .card {
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    height: 500px;
+  overflow: hidden;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  width: 1000px;
+  margin: auto;
+  gap: 10px;
+}
+
+.card__project__content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .content__text {
-    width: 50%;
-    display: flex;
-    flex-flow: column wrap;
-    gap: 10px;
+  width: 50%;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
 }
 
 .text__links {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.text__links__items {
+  padding: 0 0 8px 8px;
 }
 
 .card__link {
-    display:flex;
-    align-items: center;
-    gap: 2px;
-    border-right: 2px solid var(--Lime-Green);
-    border-radius: 8px;
-    padding-right: 8px;
-    color: var(--color-text);
+  gap: 2px;
+  border-right: 2px solid var(--Lime-Green);
+  border-radius: 8px;
+  padding: 8px;
+  color: var(--color-text);
+  box-shadow: 0px 2px 4px 0px rgba(63, 63, 255, 0.212);
 }
 
 .link__icon {
-    width: 20px;
-    height: auto;
+  width: 20px;
+  height: auto;
 }
 
 .card__content {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    overflow: hidden;
+  flex-flow: row wrap;
+  width: 100%;
+  overflow: hidden;
 }
 
 .content__picture {
-    width: 330px;
-    display: flex;
-    align-items: center;
-}
-
-.card__image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+  width: 330px;
+  height: 100%;
 }
 
 .card__title {
@@ -76,72 +91,57 @@
 }
 
 .card__picture {
-  display: flex;
   flex-flow: row wrap;
   gap: 20px;
   width: 100%;
 }
 
 .cards__picture {
-    background-color: var(--Accent-Color);
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cards__picture__image {
-    object-fit: contain;
-    width: 80%;
-    height: auto;
-    background-color: var(--Light-Grayish-Blue);
-    aspect-ratio: 683/667;
-    mix-blend-mode: multiply;
-    filter: grayscale(100%);
-    box-shadow: 0 4px 6px 0 var(--Bright-Cyan);
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  justify-content: center;
+  box-shadow: 0px 4px 6px hsl(0, 0%, 0%, .3);
 }
 
 .cards__article {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    padding: 0 20px;
-    row-gap: 10px;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  padding: 0 20px;
+  gap: 10px;
 }
 
-@media only screen and (max-width: 980px) {
-    .container__card {
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        flex-direction: column;
-    }
+@media (max-width:1080px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
 
-    .card {
-        padding: 50px;
-    }
 }
 
-@media only screen and (max-width: 700px) {
-    .container__card {
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        flex-direction: column;
-    }
+@media (max-width: 780px) {
+  .card__project__content {
+    width: 100%;
+  }
 
-    .card__content {
-        gap: 20px;
-    }
+  .content__picture {
+    width: 100%;
+  }
 
-    .cards__article, .cards__picture, .content__text, .content__picture {
-        width: auto;
-    }
+}
+
+@media (max-width: 700px) {
+  .card__content {
+    gap: 20px;
+  }
+
+  .cards__article,
+  .cards__picture,
+  .content__text,
+  .content__picture {
+    width: auto;
+  }
 }

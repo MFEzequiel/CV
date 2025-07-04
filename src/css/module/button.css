@@ -1,18 +1,70 @@
-.item__button, .buttons {
+.item__button,
+.buttons {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
+.item__button {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
 .button__icon {
-    width: 100%;
+  width: 100%;
 }
 
 .button__icon-sum {
-    fill: var(--color-sum);
+  fill: var(--color-sum);
 }
 
 .button__icon-moon {
-    fill: yellowgreen;
+  fill: yellowgreen;
 }
 
+.contact__button {
+  background-color: var(--green);
+  padding: 10px 50px;
+  border-bottom: 2px solid yellowgreen;
+  color: rgb(175, 216, 61);
+}
+
+.header__button__hamburger {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  gap: 8px;
+}
+
+.header__button__hamburger-line {
+  width: 3.2rem;
+  height: 2px;
+  background-color: var(--bt-line);
+  transform-origin: right;
+  transition: .2s;
+}
+
+.header__button__hamburger-line.header__button__hamburger-line-active:first-child {
+  transform: rotate(-45deg);
+}
+
+.header__button__hamburger-line.header__button__hamburger-line-active:nth-child(2) {
+  opacity: 0;
+}
+
+.header__button__hamburger-line.header__button__hamburger-line-active:last-child {
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 980px) {
+  .header__button__hamburger {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+  }
+}

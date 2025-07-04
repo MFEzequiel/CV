@@ -1,11 +1,16 @@
-.cont__link:hover, .menu__item__link:hover{
+.item__link:hover {
+  color: #2d923a;
+  border-bottom: 2px solid var(--green);
+}
+
+.cont__link:hover {
   color: var(--aqua);
   border-bottom: 2px solid var(--aqua);
 }
 
 .card__link:hover {
   color: var(--dark);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 1px 6px 0 hsla(219, 100%, 50%, 1);
 }
 
 .picture__image:hover {
